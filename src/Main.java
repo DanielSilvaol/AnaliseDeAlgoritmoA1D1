@@ -46,6 +46,7 @@ public class Main {
 
                 System.out.println(Arrays.toString(arr));
                 long time = sort.Sort(arr);
+                sort.CountOperation(getValues(i));
                 System.out.println(Arrays.toString(arr));
                 System.out.println("Compare: " + time + "ms");
                 System.out.println("Operations: " + sort.GetQtdOperationMethod());
@@ -57,6 +58,7 @@ public class Main {
 
                 System.out.println(Arrays.toString(arr));
                 time = sort.Sort(arr);
+                sort.CountOperation(arr);
                 System.out.println(Arrays.toString(arr));
                 System.out.println("Compare: " + time + "ms");
                 System.out.println("Operations: " + sort.GetQtdOperationMethod());
@@ -69,6 +71,7 @@ public class Main {
                 arr = getValuesInverse(arr);
                 System.out.println(Arrays.toString(arr));
                 time = sort.Sort(arr);
+                sort.CountOperation(getValuesInverse(arr));
                 System.out.println(Arrays.toString(arr));
                 System.out.println("Compare: " + time + "ms");
                 System.out.println("Operations: " + sort.GetQtdOperationMethod());
