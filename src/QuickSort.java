@@ -67,6 +67,8 @@ public class QuickSort implements ISort {
         }
         arr[init] = arr[f];
         arr[f] = pivot;
+        qtdOperation++;
+
         return f;
     }
     @Override
